@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+}
+@media(min-width:768px){
+  .graph{
+    width:30%;
+    margin:0 auto;
+  }
+}
+
+
+.App-header {
+  box-shadow:0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  color: white;
+}
+.App-header span{
+  color:#EC7063;
+  font-weight:bold;
+  font-size:40px;
+}
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+.App-logo{
+  float:left;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+input[type=text] {
+  margin-top:20px;
+  width: 20%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('https://www.w3schools.com/howto/searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+
+input[type=text]:focus {
+  width: 60%;
+}
+* {
+  box-sizing: border-box;
+}
+.searchContent{
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.column {
+  display: inline-block;
+  width: 30%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #eee;
+  margin: 28px;
+  border-radius:6px;
+
+}
+@media(max-width:767px){
+  input[type=text], input[type=password] {
+    width:60%;
+  }
+  input[type=text]:focus {
+    width: 100%;
+  }
+  .column{
+    width: 100%;
+    margin: 28px 0 0;
+  }
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.hide{
+  display:none;
+}
+.red{
+  background-color:#F5B7B1;  
+}
+.blue{
+  background-color:#D6EAF8;
+}
+#recorver-password, #signup-button{
+  display:none;
+}
+#main-wrapper{
+  margin:50px auto !important;
+ 
+}
+@media(max-width:767px){
+  #main-wrapper{
+    max-width:auto !important;
+    width:auto !important;
+  }
+}
+#password{
+  padding:14px;
+}
+#submit-login{
+  background-color: #008bcf;
+  color: #FFF;
+  border: 1px solid;
+  border-radius: 6px;
+  width:76% !important;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-native-svg-charts": "^5.2.0",
+    "react-scripts": "1.1.4",
+    "react-signup-login-component": "^1.0.3",
+    "react-svg-bar-chart": "^1.0.0",
+    "react-svg-donut-chart": "^1.0.0",
+    "react-svg-line-chart": "^2.0.1",
+    "react-svg-piechart": "^2.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
+}
