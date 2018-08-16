@@ -21,6 +21,7 @@ class SearchBox extends Component {
       }
      
       }
+     
       console.log('test');
       return (
         <div className="Search"><br/>

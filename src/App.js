@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
+import Dialog from './component/dialogBox';
 import SearchBox from './component/searchBox';
 import ContentBox from './component/contentBox';
 import LoginBox from './component/loginBox';
 
-let jsonData=[
-  {name: "Sporting Goods1", description: "$49.99", status: 'true', link: "Football"},
-  {name: "Sporting Goods2", description: "$9.99", status: 'true', link: "Baseball"},
-  {name: "Sporting Goods3", description: "$29.99", status: 'false', link: "Basketball"},
-  {name: "Electronics1", description: "$99.99", status: 'true', link: "iPod Touch"},
-  {name: "Electronics3", description: "$399.99", status: 'false', link: "iPhone 5"},
-  {name: "Electronics", description: "$199.99", status: 'true', link: "Nexus 7"}
-];
+let jsonData=[{"_id":"5b6dc63ba2de353768592a33","name":"Recommendation","description":"Decription related to recommendation","implemented":"0","link":"https://www.google.co.in/search?q=how+to+create+record+using+mongodb+compass+community&rlz=1C1CHBD_enIN790IN790&oq=how+to+create+record+using+mongodb+compass+community&aqs=chrome..69i57.14511j0j7&sourceid=chrome&ie=UTF-8"},{"_id":"5b6dc691a2de353768592a34","name":"Recomendation with spark","description":"Description spark recomendation engine","implemented":"0","link":"https://docs.mongodb.com/manual/core/capped-collections/"},{"_id":"5b6dc71396f1e23768de5e60","name":"Autonomous database","description":"Decription related to autonomous database","implemented":"1","link":"https://www.guru99.com/installation-configuration-mongodb.html#1"},{"_id":"5b6dc74196f1e23768de5e61","name":"Mobile cloud service","description":"Decription related to mobile cloud service","implemented":"1","link":"https://cloud.oracle.com/mobile"}]
 class App extends Component {
   render() {
     return (
@@ -23,8 +17,9 @@ class App extends Component {
         </header>
         <LoginBox/>
         <div id="searchPanel" class="hide">
-          <SearchBox title="" placeholder="Search" /> 
-          <ContentBox jsonData={jsonData}/>   
+          <SearchBox title="" placeholder="please type here to search" /> 
+          <ContentBox jsonData={jsonData}/>  
+          <Dialog/> 
           </div>      
       </div>
     );
